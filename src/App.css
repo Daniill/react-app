@@ -24,6 +24,10 @@
   color: white;
 }
 
+header ol {
+  color: red;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +40,47 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* --------  */
+
+.app-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "h h"
+    "n c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /*grid-gap: 10px;*/
+}
+
+.logo {
+  width: 3em;
+}
+
+.header {
+  grid-area: h;
+  background-color: rgba(0,0,0,.1);
+}
+
+.nav {
+  grid-area: n;
+  background-color: rgba(0,255,0,.1);
+
+}
+
+.content {
+  grid-area: c;
+  background-color: rgba(0,0,255,.1);
+
+}
+
+.banner {
+  width: 100%;
+}
+
+
+
+
